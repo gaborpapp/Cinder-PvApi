@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="Cinder-PvApi"
+	id="hu.mndl.pvapi"
+	author="Gabor Papp"
+	license="LGPL, Commercial"
+	summary="AVT's PvAPI SDK library for Cinder"
+	url="https://github.com/gaborpapp/Cinder-PvApi"
+	git="git://github.com/gaborpapp/Cinder-PvApi.git" >
+	<supports os="macosx" />
+	<includePath>src</includePath>
+	<sourcePattern>src/*.cpp</sourcePattern>
+	<headerPattern>src/*.h</headerPattern>
+	<platform os="macosx">
+		<staticLibrary>lib/macosx/x64/libImagelib.a</staticLibrary>
+		<dynamicLibrary>lib/macosx/x64/libPvAPI.dylib</dynamicLibrary>
+		<buildCopy>lib/macosx/x64/libPvAPI.dylib</buildCopy>
+	</platform>
+</block>
+</cinder>
