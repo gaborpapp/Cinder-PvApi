@@ -4,6 +4,7 @@
 *.user
 project.xcworkspace
 xcuserdata/
+build/
 *.xccheckout
 .DS_Store
 
