@@ -9,7 +9,8 @@ template< typename T >
 class SurfaceCacheT
 {
   public:
-	SurfaceCacheT( int32_t width, int32_t height, ci::SurfaceChannelOrder sco, int numSurfaces )
+	SurfaceCacheT( int32_t width, int32_t height, ci::SurfaceChannelOrder sco, int numSurfaces ) :
+		mWidth( width ), mHeight( height ), mSCO( sco )
 	{
 		for ( int i = 0; i < numSurfaces; ++i )
 		{
